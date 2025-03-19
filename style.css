@@ -1,3 +1,7 @@
+*, *::before, *::after {
+    box-sizing: border-box;  
+}
+
 body {
     font-family: 'Source Sans Pro', sans-serif;
     color: #404040;
@@ -64,8 +68,9 @@ p {
 .intro,
 .main-content {
     display: flex;
-    flex-direction: column;
-    padding: 2.5em 2em 0;    
+    flex-direction: column; 
+    padding-left: 2em;
+    padding-right: 2em;
 }
 
 /* =================
@@ -94,6 +99,11 @@ p {
     width: 120px;
     border-radius: 50%;
 } 
+
+.main-content p,
+form {
+    max-width: 450px;
+}
 
 /* =================
     Form
